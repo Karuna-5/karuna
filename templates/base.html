@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Patient Management System{% endblock %}</title>
+
+  <!-- Stisla CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/components.css' %}" />
+</head>
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+
+      <!-- Optional: Add Navbar here if needed -->
+
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>{% block header %}Dashboard{% endblock %}</h1>
+          </div>
+
+          <div class="section-body">
+            <div class="container-fluid">
+              {% block content %}
+              <!-- Page content injected here -->
+              {% endblock %}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Optional Footer -->
+
+    </div>
+  </div>
+
+  <!-- Stisla JS -->
+  <script src="{% static 'assets/js/scripts.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+</html>
