@@ -14,7 +14,7 @@ class PamsConfig(AppConfig):
                     Patient(full_name='Pranay', age=25, gender='M', insurance_provider='MediPlus', policy_number='MP98765'),
                     Patient(full_name='Pavi', age=20, gender='F', insurance_provider='LifeSecure', policy_number='LS45678'),
                     Patient(full_name='Satvika', age=18, gender='F', insurance_provider='HealthCare Inc', policy_number='HC67890'),
-                    Patient(full_name='Prashanth', age=20, gender='F', insurance_provider='MediPlus', policy_number='MP23456'),
+                    Patient(full_name='Prashanth', age=20, gender='M', insurance_provider='MediPlus', policy_number='MP23456'),
                 ])
         except OperationalError:
             # This will occur if migrations have not run yet
